@@ -26,9 +26,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Migrate Steps:
+
+# Note :  "skipTests": true
+
+## Migrate Steps:  
 1. `export NODE_OPTIONS=--openssl-legacy-provider` 
 2. `npm uninstall -g @Angular/cli` : to uninstall the current version of Angular CLI
 3. `npm install -g @Angular/cli@latest` : to install the latest version of Angular CLI
 4. `ng update`
+5. `ng update @angular-eslint/schematics@16 --force` : only one time
+6. `ng update`
+
 
